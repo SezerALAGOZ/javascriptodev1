@@ -11,31 +11,32 @@ function getLongDate () {
     var minute = currentDate.getMinutes();
     var hour = currentDate.getHours();
     var day = currentDate.getDay();
+    var dayAsString;
     
     if (day == 1) {
-        day = "Pazartesi"; 
+        dayAsString = "Pazartesi"; 
     }
     else if (day == 2) {
-        day = "Salı";
+        dayAsString = "Salı";
     }  
     else if (day == 3) {
-        day = "Çarşamba";
+        dayAsString = "Çarşamba";
     }  
     else if (day == 4) {
-        day = "Perşembe";
+        dayAsString = "Perşembe";
     }  
     else if (day == 5) {
-        day = "Cuma";
+        dayAsString = "Cuma";
     }  
     else if (day == 6) {
-        day = "Cumartesi";
+        ddayAsString = "Cumartesi";
     }  
     else if (day == 7) {
-        day = "Pazar";
+        dayAsString = "Pazar";
     }  
 
 
-    var tarih = `${hour}:${minute}:${second} ${day}`; 
+    var tarih = `${hour}:${minute}:${second} ${dayAsString}`; 
     
     document.getElementById("time").innerHTML = tarih;
     
